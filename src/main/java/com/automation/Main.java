@@ -1,0 +1,14 @@
+package com.automation;
+
+import com.automation.driver.DriverFactory;
+import org.openqa.selenium.WebDriver;
+
+import java.sql.Driver;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
+
+}}
