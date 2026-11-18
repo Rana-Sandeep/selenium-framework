@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class DriverFactory {
 
-    private static WebDriver driver;
+    public static WebDriver driver;
 
     public static WebDriver getDriver() {
 
