@@ -18,6 +18,7 @@ public class CheckoutInfoPage extends BasePage {
 
     public String getPageTitle() {
         waitForUrlContains("checkout-step-one");
+        waitForVisible(continueButton);
         return getTextOf(pageTitle);
     }
 

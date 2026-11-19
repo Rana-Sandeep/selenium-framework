@@ -1,6 +1,7 @@
 
 package com.automation.driver;
 
+import com.automation.utils.ConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -26,6 +27,12 @@ public class DriverFactory {
             prefs.put("profile.password_manager_leak_detection", false);
 
             options.setExperimentalOption("prefs", prefs);
+
+
+            if (Boolean.parseBoolean(ConfigReader.get("browser.headless"))) {
+                options.addArguments("--headless=new");
+                options.addArguments("--window-size=1920,1080");
+            }
 
             // IMPORTANT: Pass ChromeOptions to ChromeDriver
             driver = new ChromeDriver(options);
