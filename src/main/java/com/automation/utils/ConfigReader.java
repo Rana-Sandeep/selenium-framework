@@ -18,6 +18,10 @@ public class ConfigReader {
     }
 
     public static String get(String key) {
+        String fromCommandLine = System.getProperty(key);
+        if (fromCommandLine != null) {
+            return fromCommandLine;
+        }
         return properties.getProperty(key);
     }
 }
