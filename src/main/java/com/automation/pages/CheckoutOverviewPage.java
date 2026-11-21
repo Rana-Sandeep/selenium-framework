@@ -20,13 +20,11 @@ public class CheckoutOverviewPage extends BasePage {
     }
     public String getItemName() {
 
-        return waitForVisible(itemName).getText();
-
+        return getTextOf(itemTotal);
     }
 
     public String getItemTotal() {
-        return waitForVisible(itemTotal).getText();
-
+        return getTextOf(itemTotal);
     }
     public void clickFinish() {
         waitForClickable(finishButton).click();

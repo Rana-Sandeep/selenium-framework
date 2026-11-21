@@ -16,7 +16,7 @@ public class CartPage extends BasePage {
     public String getPageTitle() {
         waitForUrlContains("cart");
         waitForVisible(checkoutButton);
-        return getTextOf(pageTitle);
+        return getTextOf(itemName);
     }
 
     public String getItemName() {

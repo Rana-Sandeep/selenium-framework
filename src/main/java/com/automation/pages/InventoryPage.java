@@ -17,8 +17,7 @@ public class InventoryPage extends BasePage{
 
     public String getPageTitle() {
         waitForUrlContains("inventory");
-        waitForVisible(backpackAddButton);
-        return getTextOf(pageTitle);
+        return getTextOf(cartBadge);
     }
 
     public void addBackpackToCart() {

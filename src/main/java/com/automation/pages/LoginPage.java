@@ -30,8 +30,7 @@
         }
 
         public String getErrorMessage() {
-            return waitForVisible(errorMessage).getText();
-
+            return getTextOf(errorMessage);
         }
 
     }

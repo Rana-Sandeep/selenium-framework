@@ -17,8 +17,7 @@ public class CheckoutCompletePage extends BasePage {
 
     public String getPageTitle() {
         waitForUrlContains("checkout-complete");
-        waitForVisible(homeButton);
-        return getTextOf(pageTitle);
+        return getTextOf(confirmationMessage);
     }
 
     public String getConfirmationMessage(){
