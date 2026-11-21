@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'mvn clean test'
+                sh 'mvn clean test -Dbrowser.headless=true'
             }
         }
     }
